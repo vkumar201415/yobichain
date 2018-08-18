@@ -16,10 +16,10 @@ sudo apt-get -y install pwgen gpw
 source yobichain.conf
 
 # chainname=$1
-rpcuser=$1
-rpcpassword=$2
-db_admin_user=$3
-db_admin_pass=$4
+rpcuser=$4
+rpcpassword=$5
+db_admin_user=$6
+db_admin_pass=$7
 
 if ! id $linux_admin_user >/dev/null 2>&1; then
 	# Setting up user account

@@ -4,7 +4,7 @@ sudo apt-get -y update
 # set up a silent install of MySQL
 source yobichain.conf
 
-db_root_pass=$1
+db_root_pass=$4
 
 export DEBIAN_FRONTEND=noninteractive
 sudo sh -c "echo mysql-server-5.7 mysql-server/root_password password "$db_root_pass" | debconf-set-selections"

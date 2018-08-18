@@ -13,8 +13,8 @@
 # username=$(whoami)
 source yobichain.conf
 
-ftpusername=$1
-ftppasswd=$2
+ftpusername=$4
+ftppasswd=$5
 
 echo '----------------------------------------'
 echo -e 'INSTALLING PREREQUISITES.....'
