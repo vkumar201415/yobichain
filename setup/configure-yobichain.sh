@@ -2,9 +2,9 @@
 
 source yobichain.conf
 
-db_root_pass=$4
-db_admin_user=$5
-db_admin_pass=$6
+db_root_pass=$1
+db_admin_user=$2
+db_admin_pass=$3
 
 homedir=`su -l $linux_admin_user -c 'cd ~ && pwd'`
 source $homedir/.multichain/$chainname/multichain.conf
