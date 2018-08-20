@@ -6,6 +6,10 @@ db_root_pass=$1
 db_admin_user=$2
 db_admin_pass=$3
 
+chainname=$4
+networkport=$5
+rpcport=$6
+
 homedir=`su -l $linux_admin_user -c 'cd ~ && pwd'`
 source $homedir/.multichain/$chainname/multichain.conf
 
@@ -50,4 +54,3 @@ echo -e 'YOBICHAIN CONFIGURED SUCCESSFULLY!'
 echo -e '-----------------------------'
 echo ''
 echo ''
-
