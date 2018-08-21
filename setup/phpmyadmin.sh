@@ -14,7 +14,7 @@ sudo systemctl restart apache2
 
 
 cd $webServerActiveDirectory
-sudo rm -rf $archiveFileName		# Removing existing archive file
+#sudo rm -rf $archiveFileName		# Removing existing archive file
 sudo wget $downloadPath/$archiveFileName
 sudo tar -xvzf $archiveFileName
 sudo rm -rf $archiveFileName
