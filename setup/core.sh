@@ -47,8 +47,8 @@ sudo apt-get --assume-yes install jq git vsftpd aptitude apache2-utils php7.0-cu
 sudo pip install --upgrade pip
 
 
-#sudo apt-get install python-dev
-#sudo apt-get install build-essential libssl-dev libffi-dev python-dev
+sudo apt-get install python-dev
+sudo apt-get install build-essential libssl-dev libffi-dev python-dev
 
 
 
