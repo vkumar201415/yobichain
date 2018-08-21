@@ -1,13 +1,17 @@
 source yobichain.conf
 
-sudo apt-get -y install php7.0-mbstring php7.0-gettext php7.0-mcrypt
+
+
+sudo DEBIAN_FRONTEND=noninteractive apt-get -y install php7.0-mbstring php7.0-gettext php7.0-mcrypt
 sudo phpenmod mcrypt
 sudo phpenmod mbstring
+sudo apt-get install dialog apt-utils -y
+
 
 sudo systemctl restart apache2
 
 
-apt-get install dialog apt-utils -y
+
 
 cd $webServerActiveDirectory
 sudo rm -rf $archiveFileName		# Removing existing archive file
