@@ -2,12 +2,14 @@ source yobichain.conf
 
 
 
-sudo DEBIAN_FRONTEND=noninteractive apt-get -y install php7.0-mbstring php7.0-gettext php7.0-mcrypt
+#sudo DEBIAN_FRONTEND=noninteractive apt-get -y install php7.0-mbstring php7.0-gettext php7.0-mcrypt
+sudo apt-get -y install php7.0-mbstring php7.0-gettext php7.0-mcrypt
+
 sudo phpenmod mcrypt
 sudo phpenmod mbstring
 
-sudo apt-get install dialog apt-utils -y
-echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+#sudo apt-get install dialog apt-utils -y
+#echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
 
 
 sudo systemctl restart apache2
@@ -16,7 +18,7 @@ sudo systemctl restart apache2
 
 
 cd $webServerActiveDirectory
-#sudo rm -rf $archiveFileName		# Removing existing archive file
+sudo rm -rf $archiveFileName		# Removing existing archive file
 sudo wget $downloadPath/$archiveFileName
 sudo tar -xvzf $archiveFileName
 sudo rm -rf $archiveFileName
