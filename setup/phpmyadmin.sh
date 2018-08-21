@@ -6,6 +6,9 @@ sudo phpenmod mbstring
 
 sudo systemctl restart apache2
 
+
+apt-get install dialog apt-utils -y
+
 cd $webServerActiveDirectory
 sudo rm -rf $archiveFileName		# Removing existing archive file
 sudo wget $downloadPath/$archiveFileName
